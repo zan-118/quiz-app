@@ -17,8 +17,8 @@ import Audio1 from '../../assets/audio/Y_[09-24]_hanasu.mp3'
 export const JFT: Topic = {
   topic: 'JFT',
   level: 'Beginner',
-  totalQuestions: 40,
-  totalScore: 250,
+  totalQuestions: 12,
+  totalScore: 174,
   totalTime: 3600,
   questions: [
     {
@@ -27,7 +27,7 @@ export const JFT: Topic = {
       choices: ['わらいます', 'なきます', 'おこります'],
       type: 'MCQs',
       correctAnswers: ['なきます'],
-      score: 3,
+      score: 9,
     },
     {
       question: '',
@@ -36,7 +36,7 @@ export const JFT: Topic = {
       choices: ['こうえん', 'ひろば', 'いちば'],
       type: 'MCQs',
       correctAnswers: ['ひろば'],
-      score: 3,
+      score: 10,
     },
     {
       question: '',
@@ -45,7 +45,7 @@ export const JFT: Topic = {
       choices: ['きれい', 'しずか', 'にぎやか'],
       type: 'MCQs',
       correctAnswers: ['にぎやか'],
-      score: 3,
+      score: 11,
     },
     {
       question: 'Look at the illustration and choose the correct sentence',
@@ -54,7 +54,7 @@ export const JFT: Topic = {
       choices: ['今日は　天気がいいです', '今は雪がふっています', '今は雨がふっています'],
       type: 'MCQs',
       correctAnswers: ['今は雨がふっています'],
-      score: 3,
+      score: 12,
     },
     {
       question:
@@ -64,7 +64,7 @@ export const JFT: Topic = {
       choices: ['そふ', 'おば', 'おじ'],
       type: 'MCQs',
       correctAnswers: ['おじ'],
-      score: 3,
+      score: 13,
     },
     {
       question:
@@ -74,7 +74,7 @@ export const JFT: Topic = {
       choices: ['あつく', 'さむく', 'つめたく'],
       type: 'MCQs',
       correctAnswers: ['つめたく'],
-      score: 3,
+      score: 14,
     },
     {
       question:
@@ -84,7 +84,7 @@ export const JFT: Topic = {
       choices: ['あたまがいい', 'みみがいい', 'くらがいい'],
       type: 'MCQs',
       correctAnswers: ['あたまがいい'],
-      score: 3,
+      score: 15,
     },
     {
       question:
@@ -94,7 +94,7 @@ export const JFT: Topic = {
       choices: ['あげない', 'あげよう', 'あげるため', 'あげるつもり'],
       type: 'MCQs',
       correctAnswers: ['あげるつもり'],
-      score: 3,
+      score: 16,
     },
     {
       question: 'Pililah partikel yang tepat untuk melengkapi kalimat berikut.',
@@ -103,7 +103,7 @@ export const JFT: Topic = {
       choices: ['と、に', 'で、で', 'と、で'],
       type: 'MCQs',
       correctAnswers: ['で、で'],
-      score: 3,
+      score: 17,
     },
     {
       question: 'Baca percakapan berikut dan pilihlah frase kata yang tepat',
@@ -117,7 +117,7 @@ export const JFT: Topic = {
       ],
       type: 'MCQs',
       correctAnswers: ['インドネシアに帰って、家族に会いました'],
-      score: 3,
+      score: 18,
     },
     {
       question:
@@ -127,7 +127,7 @@ export const JFT: Topic = {
       choices: ['自分でつくてたべます。', '何も食べません', 'なにを作っています'],
       type: 'MCQs',
       correctAnswers: ['自分でつくてたべます'],
-      score: 3,
+      score: 19,
     },
     {
       question: 'なにをおしえてもらえませんか。.',
@@ -136,7 +136,7 @@ export const JFT: Topic = {
       choices: ['かんじのよみかたです。', 'かんじのようかたです。', 'かんじののむかた'],
       type: 'MCQs',
       correctAnswers: ['かんじのよみかたです。'],
-      score: 3,
+      score: 20,
     },
   ],
 }
