@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![React Quiz App Template Cover Image](./src/assets/images/ReactJS-Quiz-App-Template.jpg)
 
 # Xeven Quiz - ReactJS Quiz App Template
@@ -296,3 +297,6 @@ Choose the one that best suits your needs and follow their deployment instructio
 ### Contact Me
 
 I hope this documentation helps you get started with the Xeven Quiz App. If you have any questions or feedback, please feel free to reach out to me at **[abdul_basit313@outlook.com](mailto:abdul_basit313@outlook.com)**. Happy quizzing!
+=======
+# quiz-app
+>>>>>>> f70a6b1d7b0612011eb165b922dd230e1406372b
