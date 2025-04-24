@@ -55,7 +55,8 @@ const Question: FC<QuestionTypes> = ({
 }) => {
   return (
     <QuestionContainer>
-      <QuestionStyle>{question}</QuestionStyle>
+      <QuestionStyle dangerouslySetInnerHTML={{ __html: question }} />
+      {/* <QuestionStyle>{question}</QuestionStyle> */}
       {/* if question contains code snippet then show code */}
       {code && <CodeSnippet code={code} language="javascript" />}
       {/* if question contains an image */}

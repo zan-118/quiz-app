@@ -4,7 +4,7 @@
 // 3. MAQs | Multiple Answers | multiple
 
 import { Topic } from '.'
-import { Image1, Image2, Image3, Image31, Image32, Image33, Image34, Image35, Image47, Image48 ,Image49 ,Image51 ,Image52 ,Image53 ,Image54 } from '../../assets/images/Simulation JFT-1'
+import { Image1, Image2, Image3, Image31, Image32, Image34, Image35,  } from '../../assets/images/Simulation JFT-1'
 
 import {Audio31, Audio32, Audio33, Audio34, Audio35, Audio36, Audio37, Audio38, Audio39, Audio40} from '../../assets/audio/Simulation JFT-1'
 export const JFT: Topic = {
@@ -12,7 +12,7 @@ export const JFT: Topic = {
   level: 'Beginner',
   totalQuestions: 50,
   totalScore: 250,
-  totalTime: 1800,
+  totalTime: 3600,
   questions: [
     {
       question: "これは何ですか。 ",
@@ -82,7 +82,8 @@ export const JFT: Topic = {
     },
     {
       question:
-       "海でたくさん魚を釣りました。</br>海=....",
+       `海でたくさん魚を釣りました。
+       <br />海=....`,
       image: '',
       audio: '',
       choices: ["まい", "なみ", "うみ", "みう"],
@@ -413,7 +414,7 @@ export const JFT: Topic = {
     },
     {
       question: "いつむかえにいきますか。   ",
-      image: Image33,
+      image: '',
       audio: Audio33,
       choices: ["１５日","１６日","１９日","１７日"],
       type: 'MCQs',
