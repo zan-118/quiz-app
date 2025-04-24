@@ -33,9 +33,9 @@ const ResultOverview: FC<ResultOverviewProps> = ({ result }) => {
     .filter((item) => item.isMatch && typeof item.score === 'number')
     .reduce((accumulator, currentValue) => accumulator + (currentValue.score || 0), 0)
 
-  // Passed if 60 or more than 60% marks
+  // Passed if 80 or more than 80% marks
   const calculateStatus =
-    (obtainedScore / quizDetails.totalScore) * 100 >= 60 ? 'Passed' : 'Failed'
+    (obtainedScore / quizDetails.totalScore) * 100 >= 80 ? 'Passed' : 'Failed'
 
   return (
     <ResultOverviewStyle>

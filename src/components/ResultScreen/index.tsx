@@ -147,11 +147,13 @@ const ResultScreen: FC = () => {
             index: number
           ) => {
             return (
+              
               <QuestionContainer key={question}>
+                
                 <ResizableBox width="90%">
                   <Flex gap="4px">
                     <QuestionNumber>{`${index + 1}. `}</QuestionNumber>
-                    <QuestionStyle>{question}</QuestionStyle>
+                    <QuestionStyle dangerouslySetInnerHTML={{ __html: question }} />
                   </Flex>
                   <div>
                     {code && <CodeSnippet code={code} language="javascript" />}
