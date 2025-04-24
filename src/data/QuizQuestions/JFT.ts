@@ -4,139 +4,768 @@
 // 3. MAQs | Multiple Answers | multiple
 
 import { Topic } from '.'
-import Nakimasu from '../../assets/images/nakimasu.png'
-import Ame from '../../assets/images/ame.png'
-import Hiroba from '../../assets/images/hiroba.png'
-import Kazoku from '../../assets/images/kazoku.png'
-import MeiEmi from '../../assets/images/mei & emi.png'
-import Nigiyaka from '../../assets/images/nigiyaka.png'
-import Partike from '../../assets/images/partike.png'
-import SenseiRio from '../../assets/images/sensei & rio.png'
-import TanakaKawai from '../../assets/images/tanaka & kawai.png'
-import Audio1 from '../../assets/audio/Y_[09-24]_hanasu.mp3'
+import { Image1, Image2, Image3, Image31, Image32, Image33, Image34, Image35, Image47, Image48 ,Image49 ,Image51 ,Image52 ,Image53 ,Image54 } from '../../assets/images/Simulation JFT-1'
+
+import {Audio31, Audio32, Audio33, Audio34, Audio35, Audio36, Audio37, Audio38, Audio39, Audio40} from '../../assets/audio/Simulation JFT-1'
 export const JFT: Topic = {
   topic: 'JFT',
   level: 'Beginner',
-  totalQuestions: 12,
-  totalScore: 174,
+  totalQuestions: 50,
+  totalScore: 250,
   totalTime: 1800,
   questions: [
     {
-      question: 'Look at the illustration and choose the correct word',
-      image: Nakimasu,
-      choices: ['わらいます', 'なきます', 'おこります'],
-      type: 'MCQs',
-      correctAnswers: ['なきます'],
-      score: 9,
-    },
-    {
-      question: '',
-      image: Hiroba,
+      question: "これは何ですか。 ",
+      image: Image1,
       audio: '',
-      choices: ['こうえん', 'ひろば', 'いちば'],
+      choices: ["クッキ", "ケーキ", "パン", "イチゴ"],
       type: 'MCQs',
-      correctAnswers: ['ひろば'],
-      score: 10,
+      correctAnswers: ["ケーキ"],
+      score: 3,
     },
     {
-      question: '',
-      image: Nigiyaka,
+      question: "これは何ですか。 ",
+      image: Image2,
       audio: '',
-      choices: ['きれい', 'しずか', 'にぎやか'],
+      choices: ["しゃちょう", "かいしゃいん", "うけつけ", "アルバイト"],
       type: 'MCQs',
-      correctAnswers: ['にぎやか'],
-      score: 11,
+      correctAnswers: ["うけつけ"],
+      score: 3,
     },
     {
-      question: 'Look at the illustration and choose the correct sentence',
-      image: Ame,
+      question: "この人は何をしますか。 ",
+      image: Image3,
       audio: '',
-      choices: ['今日は　天気がいいです', '今は雪がふっています', '今は雨がふっています'],
+      choices: ["こまります", "れんらくします", "なきます", "ききます"],
       type: 'MCQs',
-      correctAnswers: ['今は雨がふっています'],
-      score: 12,
+      correctAnswers: ["れんらくします"],
+      score: 3,
     },
     {
-      question:
-        'Look at this family tree below and choose the correct word that fits in (   ) the most.',
-      image: Kazoku,
-      audio: '',
-      choices: ['そふ', 'おば', 'おじ'],
-      type: 'MCQs',
-      correctAnswers: ['おじ'],
-      score: 13,
-    },
-    {
-      question:
-        'Read the sentence and choose the word that fits in (   ) the most. もうちょっと冬なので、だんだん（　　）なってきました。',
+      question: "昨日から＿＿＿＿＿＿で、電車が止まりました。 ",
       image: '',
       audio: '',
-      choices: ['あつく', 'さむく', 'つめたく'],
+      choices: ["すごい雨", "つかれました", "おくれました", "はれ" ],
       type: 'MCQs',
-      correctAnswers: ['つめたく'],
-      score: 14,
+      correctAnswers: ["すごい雨"],
+      score: 3,
     },
     {
       question:
-        'Read the sentence and choose the word that fits in ( ) the most. 彼は（　）ですから、先生によくほめられています。',
+        "お兄さんはまだ学生です、大学で日本語を＿＿＿＿＿。 ",
       image: '',
       audio: '',
-      choices: ['あたまがいい', 'みみがいい', 'くらがいい'],
+      choices: ["おしえます", "ならいます", "いれます", "でます" ],
       type: 'MCQs',
-      correctAnswers: ['あたまがいい'],
-      score: 15,
+      correctAnswers: ["ならいます"],
+      score: 3,
     },
     {
       question:
-        'Sdr. Mei bertanya kepada Sdr. Emi tantang hadiah kelahiran bayi. Baca percakapan berikut dan pilih frase kata yang tepat.',
-      image: MeiEmi,
+        "銀行ははしを＿＿＿＿、ひだりがわにあります。 ",
+      image: '',
       audio: '',
-      choices: ['あげない', 'あげよう', 'あげるため', 'あげるつもり'],
+      choices: ["あるいて", "はしって", "いって", "わたって"],
       type: 'MCQs',
-      correctAnswers: ['あげるつもり'],
-      score: 16,
+      correctAnswers: ["いって"],
+      score: 3,
     },
     {
-      question: 'Pililah partikel yang tepat untuk melengkapi kalimat berikut.',
-      image: Partike,
+      question:
+        "しごとがないのでとても＿＿＿＿。 ",
+      image: '',
       audio: '',
-      choices: ['と、に', 'で、で', 'と、で'],
+      choices: ["いそがしいです", "たいへんです", "ひまです", "ねむいです" ],
       type: 'MCQs',
-      correctAnswers: ['で、で'],
-      score: 17,
+      correctAnswers: ["ひまです"],
+      score: 3,
     },
     {
-      question: 'Baca percakapan berikut dan pilihlah frase kata yang tepat',
-      image: SenseiRio,
+      question:
+       "海でたくさん魚を釣りました。</br>海=....",
+      image: '',
+      audio: '',
+      choices: ["まい", "なみ", "うみ", "みう"],
+      type: 'MCQs',
+      correctAnswers: ["うみ"],
+      score: 3,
+    },
+    {
+      question: "雲たくさんみえますね、雨がふりそうです。</br>雲=.... ",
+      image: '',
+      audio: '',
+      choices: ["くも", "けむり", "かぜ", "あえ"],
+      type: 'MCQs',
+      correctAnswers: ["くも"],
+      score: 3,
+    },
+    {
+      question: "二かいにこのはこを持ってください。</br>持って=... ",
+      image: '',
       audio: '',
       choices: [
-        'インドネシアに帰って、家族に会いました',
-        '今年はもっと長い休みがはしいです',
-        'ゆっくり好きなことができて、うまれしいです',
-        '休みは一週間しかありませんでした',
+        "まって",
+        "もって",
+        "のって",
+        "とって",
       ],
       type: 'MCQs',
-      correctAnswers: ['インドネシアに帰って、家族に会いました'],
-      score: 18,
+      correctAnswers: ["もって"],
+      score: 3,
     },
     {
       question:
-        'Dua orang sedang berbicara ketika makan siang. baca percakapan dan pilih ekspresi dan pilih ekspresi yang tepat.',
-      image: TanakaKawai,
+        "ジュースの味はどうですか。</br>味=...  ",
+      image: '',
       audio: '',
-      choices: ['自分でつくてたべます', '何も食べません', 'なにを作っています'],
+      choices: ["じみ", "ちみ", "あじ", "ちじ"],
       type: 'MCQs',
-      correctAnswers: ['自分でつくてたべます'],
-      score: 19,
+      correctAnswers: ["あじ"],
+      score: 3,
     },
     {
-      question: 'なにをおしえてもらえませんか.',
+      question: "あのとけい止まっていますね。</br>とけい=...  ",
       image: '',
-      audio: Audio1,
-      choices: ['かんじのよみかたです', 'かんじのようかたです', 'かんじののむかた'],
+      audio: '',
+      choices: ["待計", "時計", "寺計", "持計" ],
       type: 'MCQs',
-      correctAnswers: ['かんじのよみかたです'],
-      score: 20,
+      correctAnswers: ["時計"],
+      score: 3,
+    },
+    {
+      question: "あのあおいふくをとってください。</br>あおい=...  ",
+      image: '',
+      audio: '',
+      choices: ["赤い", "白い", "黒い", "青い" ],
+      type: 'MCQs',
+      correctAnswers: ["青い"],
+      score: 3,
+    },
+    {
+      question: "でんきをつけばあかるくなりますよ。</br>でんき=...   ",
+      image: '',
+      audio: '',
+      choices: ["雲気", "電気", "髪気", "雨気"],
+      type: 'MCQs',
+      correctAnswers: ["電気"],
+      score: 3,
+    },
+    {
+      question: "らいねん　じぶんのくに　へ　きこくします </br>きこく=...  ",
+      image: '',
+      audio: '',
+      choices: ["掃国", "帰王", "帰国", "掃王" ],
+      type: 'MCQs',
+      correctAnswers: ["帰国"],
+      score: 3,
+    },
+    {
+      question: `
+        山田：その本とってもすてきですね。</br>
+        リン：ええ、この本は私の国で作ったほんですよ。</br>
+        山田：へえ、すごいですね。＿＿＿＿＿＿＿。</br>
+        リン：もちろん、いいですよ。</br>
+        <hr>
+        ＿＿＿に入るものは何ですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["かりてませんか", "かりてもいいですか", "かりましょうか", "かりますか"  ],
+      type: 'MCQs',
+      correctAnswers: ["かりてもいいですか"],
+      score: 4,
+    },
+    {
+      question: `
+        ワット：ミーらさんはサッカーが好きですか。</br>
+        ミーら：すきです。一か月に１０＿＿＿サッカーを＿＿＿。</br>
+        ワット：そうですか、私もすきですよ。こんど、一緒に見ましょう。</br>
+        <hr>
+        ＿＿＿に入るものは何ですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["かい　　　みません。", "だい　　　みます。", "かい　　　みます。", "だい　　　いっません。"],
+      type: 'MCQs',
+      correctAnswers: ["かい　　　みます。"],
+      score: 4,
+    },
+    {
+      question: `
+        Ａ：明日先生の誕生日ですね。</br>
+        Ｂ：そうですね、何か上げたいですね。</br>
+        Ａ：皆でプレゼントを＿＿＿＿＿か。</br>
+        Ｃ：いいですね、私もさんかします。</br>
+        <hr>
+        ＿＿＿に入るものは何ですか。
+
+        `,
+      image: '',
+      audio: '',
+      choices: ["あげました", "あげてもいいです", "あげないほうがいいです", "あげません" ],
+      type: 'MCQs',
+      correctAnswers: ["あげません"],
+      score: 4,
+    },
+    {
+      question: `
+        Ａ：Ｂ－さんはぶたにくたべますか。</br>
+        Ｂ：私は、＿＿＿たべません。</br>
+        Ａ：そうですか。</br>
+        <hr>
+        ＿＿＿に入るものは何ですか。
+
+        `,
+      image: '',
+      audio: '',
+      choices: ["よく", "ぜんぜん", "たくさん", "すこし" ],
+      type: 'MCQs',
+      correctAnswers: ["ぜんぜん"],
+      score: 4,
+    },
+    {
+      question: `
+        かとう：あした何時にいきますか。</br>
+        けいと：６時____いきます。</br>
+        かとう：わかりました、じゃまたあした。</br>
+        <hr>
+        ＿＿＿に入るものは何ですか。
+
+        `,
+      image: '',
+      audio: '',
+      choices: ["ぐら", "ちょうど", "ころ", "ごろ"],
+      type: 'MCQs',
+      correctAnswers: ["ごろ"],
+      score: 4,
+    },
+    {
+      question: `こんなに　おいしい　りょうりは　いちど＿＿たべたことがありません。 
+        <hr>
+        ＿＿＿に入るものは何ですか。`,
+      image: '',
+      audio: '',
+      choices: ["で", "も", "に", "だけ" ],
+      type: 'MCQs',
+      correctAnswers: ["も"],
+      score: 4,
+    },
+    {
+      question: `わたしは　日本でのせいかつ　に　＿＿＿＿なれません。
+        <hr>
+        ＿＿＿に入るものは何ですか。`,
+      image: '',
+      audio: '',
+      choices: ["なかなか", "すこしだけ", "けっこう",  "よく" ],
+      type: 'MCQs',
+      correctAnswers: ["なかなか"],
+      score: 4,
+    },
+    {
+      question: `インドネシアは＿＿がひろいですか。
+        <hr>
+        ＿＿＿に入るものは何ですか。`,
+      image: '',
+      audio: '',
+      choices: ["なんど", "どこ", "どの" , "どっちら"],
+      type: 'MCQs',
+      correctAnswers: ["どこ"],
+      score: 4,
+    },
+    {
+      question: `あの人は　ちからがつよくて　おとこ＿＿＿ひとですね。
+        <hr>
+        ＿＿＿に入るものは何ですか。`,
+      image: '',
+      audio: '',
+      choices: ["そうな", "らしい", "ような", "とおり" ],
+      type: 'MCQs',
+      correctAnswers: ["らしい"],
+      score: 4,
+    },
+    {
+      question: "きょうは＿＿＿あめがふるでしょう。 ",
+      image: '',
+      audio: '',
+      choices: ["たぶん", "たとえ", "こう", "そんなに" ],
+      type: 'MCQs',
+      correctAnswers: ["たぶん"],
+      score: 4,
+    },
+    {
+      question: "ひみつだから、だれ＿＿＿＿いわないでください。 ",
+      image: '',
+      audio: '',
+      choices: ["にも", "たぶん", "か", "でも"],
+      type: 'MCQs',
+      correctAnswers: ["にも"],
+      score: 4,
+    },
+    {
+      question: `
+        たかはし：みなみえきに　新しい　レストランができましたよ。
+        皆はもう「１」＿＿＿＿。</br>
+        はなやま：いきました、とっても「２」＿＿＿＿＿ですよ。</br>
+        たかはし：いいな、私も行ってみたい。こんど皆といきましょう。</br>
+        けい　　：私もまだなので、行きたいですね。</br>
+        はなやま：いいですよ。</br>
+        たかはし：あ、しゅくだいまだ　やってなかった。</br>
+            　しゅくだいを「３」＿＿＿＿ながらでもいいですか。</br>
+        けい　　：ぜんぜんいいですよ。</br>
+        はなやま：じゃ、またあとでね。</br>
+        たかはし：ええ、「４」＿＿＿＿。</br>
+        <hr>
+        「１」に入るものはなんですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["いきましたか", "いきませんか", "いきませんでしたか", "いかなかったか"],
+      type: 'MCQs',
+      correctAnswers: ["いきましたか"],
+      score: 4,
+    },
+    {
+      question: `
+        たかはし：みなみえきに　新しい　レストランができてますよ。
+        皆はもう「１」＿＿＿＿。</br>
+        はなやま：いきました、とっても「２」＿＿＿＿＿ですよ。</br>
+        たかはし：いいな、私も行ってみたい。こんど皆といきましょう。</br>
+        けい　　：私もまだなので、行きたいですね。</br>
+        はなやま：いいですよ。</br>
+        たかはし：あ、しゅくだいまだ　やってなかった。</br>
+            　しゅくだいを「３」＿＿＿＿ながらでもいいですか。</br>
+        けい　　：ぜんぜんいいですよ。</br>
+        はなやま：じゃ、またあとでね。</br>
+        たかはし：ええ、「４」＿＿＿＿。</br>
+        <hr>
+        「２」に入るものはなんですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["かたい", "おいしい", "つめたい", "ながい"],
+      type: 'MCQs',
+      correctAnswers: ["おいしい"],
+      score: 4,
+    },
+    {
+      question: `
+        たかはし：みなみえきに　新しい　レストランができてますよ。
+        皆はもう「１」＿＿＿＿。</br>
+        はなやま：いきました、とっても「２」＿＿＿＿＿ですよ。</br>
+        たかはし：いいな、私も行ってみたい。こんど皆といきましょう。</br>
+        けい　　：私もまだなので、行きたいですね。</br>
+        はなやま：いいですよ。</br>
+        たかはし：あ、しゅくだいまだ　やってなかった。</br>
+            　しゅくだいを「３」＿＿＿＿ながらでもいいですか。</br>
+        けい　　：ぜんぜんいいですよ。</br>
+        はなやま：じゃ、またあとでね。</br>
+        たかはし：ええ、「４」＿＿＿＿。</br>
+        <hr>
+        「３」に入るものはなんですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["する", "やる", "すり", "やり"],
+      type: 'MCQs',
+      correctAnswers: ["やり"],
+      score: 4,
+    },
+    {
+      question: `
+        たかはし：みなみえきに　新しい　レストランができてますよ。
+        皆はもう「１」＿＿＿＿。</br>
+        はなやま：いきました、とっても「２」＿＿＿＿＿ですよ。</br>
+        たかはし：いいな、私も行ってみたい。こんど皆といきましょう。</br>
+        けい　　：私もまだなので、行きたいですね。</br>
+        はなやま：いいですよ。</br>
+        たかはし：あ、しゅくだいまだ　やってなかった。</br>
+            　しゅくだいを「３」＿＿＿＿ながらでもいいですか。</br>
+        けい　　：ぜんぜんいいですよ。</br>
+        はなやま：じゃ、またあとでね。</br>
+        たかはし：ええ、「４」＿＿＿＿。</br>
+        <hr>
+        「４」に入るものはなんですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["また", "どうも", "すみません", "しつれいします"],
+      type: 'MCQs',
+      correctAnswers: ["また"],
+      score: 4,
+    },
+    {
+      question: "きのしたさんのところにはどうなっていますか。 ",
+      image: Image31,
+      audio: Audio31,
+      choices: ["1","2","3","4"],
+      type: 'MCQs',
+      correctAnswers: ["4"],
+      score: 7.25,
+    },
+    {
+      question: "ルイさんはどこへ行けいいですか。",
+      image: Image32,
+      audio: Audio32,
+      choices: ["1","2","3","4"],
+      type: 'MCQs',
+      correctAnswers: ["2"],
+      score: 7.25,
+    },
+    {
+      question: "いつむかえにいきますか。   ",
+      image: Image33,
+      audio: Audio33,
+      choices: ["１５日","１６日","１９日","１７日"],
+      type: 'MCQs',
+      correctAnswers: ["１５日"],
+      score: 7.25,
+    },
+    {
+      question: "ままちあわせはどこでしますか。",
+      image: Image34,
+      audio: Audio34,
+      choices: ["1","2","3","4"],
+      type: 'MCQs',
+      correctAnswers: ["1"],
+      score: 7.25,
+    },
+    {
+      question: "女の人はどこへ行けばいいですか。 ",
+      image: Image35,
+      audio: Audio35,
+      choices: ["1","2","3","4"],
+      type: 'MCQs',
+      correctAnswers: ["3"],
+      score: 7.25,
+    },
+    {
+      question: "女の学生は子どもの時、何になりたかったですか。 ",
+      image: '',
+      audio: Audio36,
+      choices: ["ピアニスト","せんせい","けいさつ","かんごし"],
+      type: 'MCQs',
+      correctAnswers: ["ピアニスト"],
+      score: 7.25,
+    },
+    {
+      question: "女のりゅうがくせいはどうしてアルバイトをしたいですか。 ",
+      image: '',
+      audio: Audio37,
+      choices: ["日本語のべんきょうが したいから","デパートで買い物がしたいから","りょこうに行きたいから","日本人の働き方が知りたいから"],
+      type: 'MCQs',
+      correctAnswers: ["日本人の働き方が知りたいから"],
+      score: 7.25,
+    },
+    {
+      question: "なんようびに一日中雨がふると言っていますか。 ",
+      image: '',
+      audio: Audio38,
+      choices: ["すいようび","かようび","もくようび","きんようび"],
+      type: 'MCQs',
+      correctAnswers: ["もくようび"],
+      score: 7.25,
+    },
+    {
+      question: "男の人はさいきんどのぐらい本を読んでいますか。 ",
+      image: '',
+      audio: Audio39,
+      choices: ["ぜんぜん","月に１０さついじょう読む","月に１さつ読む","月に３さつ読む"],
+      type: 'MCQs',
+      correctAnswers: ["ぜんぜん"],
+      score: 7.25,
+    },
+    {
+      question: "女の学生はだれと住んでいますか。 ",
+      image: '',
+      audio: Audio40,
+      choices: ["りょうしん","いもうと","あね","おとうと"],
+      type: 'MCQs',
+      correctAnswers: ["おとうと"],
+      score: 7.25,
+    },
+    {
+      question: `
+        41-44<hr>
+        私は　夏休みに　日本人の　友だちと　いっしょに　友だちの　
+        いなかへ　行きました。 行く　時は　電車で　行ったので、
+        12時間も　かかりました。 友だちの　家族は　みんな　
+        親切でした。 </br>
+        お父さんは　車で　きれいな　みずうみに　つれて　行って　くれました。
+        みずうみには　魚を　つっている人や　ふねに　乗っている人が　
+        いました。 でも、およいでいる人は　いませんでした。 </br>
+        友だちが　ふねに　乗ろうと　言ったので、ふねに　乗りましたが、おちそうに　
+        なって、ちょっと　こわかったです。</br> 
+        お母さんが　作って　くれた　日本の　料理は　とても　おいしかったです。
+        お母さんに　 私は　おさらが　買いたいです。」と　言うと、
+        お母さんが　お店に　つれて　行って　くれました。 
+        そこで、白くて　まるい　おさらを　３まい　買いました。 </br>
+        この　お店では、自分でも　おさらや　おちゃわんを　作れると　書いたので、
+        私も　一つ　作りました。 おさらを　作るのは　むずかしいので、
+        小さい　おちゃわんを　作りました。 </br>
+        帰りは　一人で　ひこうきに　乗って　帰って　きました。 夏休みに　友だちの　
+        いなかに　行く　ことが　できて、　ほんとうに　よかったです
+        <hr>
+        夏休みは　何をしましたか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "友だちを　つれて　国へ　帰りました。",
+        "友だちと　いっしょに　ひこうきで　旅行しました。 ",
+        "友だちの　いなかで　日本の　料理を　作りました。",
+        "友だちの　いなかへ　電車に　乗って　あそびに　行きました"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["友だちの　いなかへ　電車に　乗って　あそびに　行きました"],
+      score: 7.25,
+    },
+    {
+      question: `
+        41-44<hr>
+        私は　夏休みに　日本人の　友だちと　いっしょに　友だちの　
+        いなかへ　行きました。 行く　時は　電車で　行ったので、
+        12時間も かかりました。 友だちの　家族は　みんな　
+        親切でした。 </br>
+        お父さんは　車で　きれいな　みずうみに　つれて　行って　くれました。
+        みずうみには　魚を　つっている人や　ふねに　乗っている人が　
+        いました。 でも、およいでいる人は　いませんでした。 </br>
+        友だちが　ふねに　乗ろうと　言ったので、ふねに　乗りましたが、おちそうに　
+        なって、ちょっと　こわかったです。</br> 
+        お母さんが　作って　くれた　日本の　料理は　とても　おいしかったです。
+        お母さんに　 私は　おさらが　買いたいです。」と　言うと、
+        お母さんが　お店に　つれて　行って　くれました。 
+        そこで、白くて　まるい　おさらを　３まい　買いました。 </br>
+        この　お店では、自分でも　おさらや　おちゃわんを　作れると　書いたので、
+        私も　一つ　作りました。 おさらを　作るのは　むずかしいので、
+        小さい　おちゃわんを　作りました。 </br>
+        帰りは　一人で　ひこうきに　乗って　帰って　きました。 夏休みに　友だちの　
+        いなかに　行く　ことが　できて、　ほんとうに　よかったです
+        <hr>
+        みずうみでなにをしましたか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "およいだり、ふねに　乗ったり　しました。",
+        "ふねに　乗りましたが、およぎませんでした。",
+        "ふねに　乗りましたが、おちてしまいました。",
+        "魚を　つったり、ふねに　乗ったり　しました。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["ふねに　乗りましたが、およぎませんでした。"],
+      score: 7.25,
+    },
+    {
+      question: `
+        41-44<hr>
+        私は　夏休みに　日本人の　友だちと　いっしょに　友だちの　
+        いなかへ　行きました。 行く　時は　電車で　行ったので、
+        12時間も かかりました。 友だちの　家族は　みんな　
+        親切でした。 </br>
+        お父さんは　車で　きれいな　みずうみに　つれて　行って　くれました。
+        みずうみには　魚を　つっている人や　ふねに　乗っている人が　
+        いました。 でも、およいでいる人は　いませんでした。 </br>
+        友だちが　ふねに　乗ろうと　言ったので、ふねに　乗りましたが、おちそうに　
+        なって、ちょっと　こわかったです。</br> 
+        お母さんが　作って　くれた　日本の　料理は　とても　おいしかったです。
+        お母さんに　 私は　おさらが　買いたいです。と　言うと、
+        お母さんが　お店に　つれて　行って　くれました。 
+        そこで、白くて　まるい　おさらを　３まい　買いました。 </br>
+        この　お店では、自分でも　おさらや　おちゃわんを　作れると　書いたので、
+        私も　一つ　作りました。 おさらを　作るのは　むずかしいので、
+        小さい　おちゃわんを　作りました。 </br>
+        帰りは　一人で　ひこうきに　乗って　帰って　きました。 夏休みに　友だちの　
+        いなかに　行く　ことが　できて、　ほんとうに　よかったです
+        <hr>
+        お店で何をしましたか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "小さくて　まるい　おさらを　作りました。",
+        "小さい　おちゃわんを　三つ　作りました。",
+        "白くて　まるい　おちゃわんを　買いました。",
+        "白くて　まるい　おさらを　３まい　買いました。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["白くて　まるい　おさらを　３まい　買いました。"],
+      score: 7.25,
+    },
+    {
+      question:  `
+      41-44<hr>
+      私は　夏休みに　日本人の　友だちと　いっしょに　友だちの　
+      いなかへ　行きました。 行く　時は　電車で　行ったので、
+      12時間も かかりました。 友だちの　家族は　みんな　
+      親切でした。 </br>
+      お父さんは　車で　きれいな　みずうみに　つれて　行って　くれました。
+      みずうみには　魚を　つっている人や　ふねに　乗っている人が　
+      いました。 でも、およいでいる人は　いませんでした。 </br>
+      友だちが　ふねに　乗ろうと　言ったので、ふねに　乗りましたが、おちそうに　
+      なって、ちょっと　こわかったです。</br> 
+      お母さんが　作って　くれた　日本の　料理は　とても　おいしかったです。
+      お母さんに　 私は　おさらが　買いたいです。と　言うと、
+      お母さんが　お店に　つれて　行って　くれました。 
+      そこで、白くて　まるい　おさらを　３まい　買いました。 </br>
+      この　お店では、自分でも　おさらや　おちゃわんを　作れると　書いたので、
+      私も　一つ　作りました。 おさらを　作るのは　むずかしいので、
+      小さい　おちゃわんを　作りました。 </br>
+      帰りは　一人で　ひこうきに　乗って　帰って　きました。 夏休みに　友だちの　
+      いなかに　行く　ことが　できて、　ほんとうに　よかったです
+      <hr>
+      「私」さいごに　どうおもいましたか。
+      `,
+      image: '',
+      audio: '',
+      choices: [
+        "おもしろいいと思いました。",
+        "うれしいとおもいました。",
+        "ほんとうによかったとおもいました。",
+        "たのしいとおもいました。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["ほんとうによかったとおもいました。"],
+      score: 7.25,
+    },
+    {
+      question:  `
+      アリさんの机の上に、このメモと本が置いてあります。</br>
+      アリさん</br>
+      アリさんから借りた本を置いておきます。ありがとうございました。</br>
+      アリさんが借りたいと言っていた本も、一緒に置きます。重いので、今日は２冊しか持ってきませんでした。来週、ほかの３冊を持ってきます。</br>
+      いしかわ</br>
+      <hr>
+      いしかわさんは、来週、何をすると言っていますか。
+      `,
+      image: '',
+      audio: '',
+      choices: [
+        "アリさんに本を２冊返します。",
+        "アリさんに本を３冊返します。",
+        "アリさんに本を２冊貸します。",
+        "アリさんに本を３冊貸します。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["アリさんに本を３冊貸します。"],
+      score: 7.25,
+    },
+    {
+      question: `
+        山川 「あ、もう１１時。すぐ帰らないと。」</br>
+        ヤン 「もう帰るんですか。あしたは日曜日で、休みでしょう。」</br>
+        山川 「でも電車がなくなりますから。」</br>
+        </br><hr>
+        この会話では、山川さんはこれからどうするつもりですか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "電車で帰ります。",
+        "まだ帰りません。",
+        "タクシーで帰ります。",
+        "今日は帰りません。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["電車で帰ります。"],
+      score: 7.25,
+    },
+    {
+      question: `
+        学校の入り口に、このお知らせがあります。</br>
+        学校には：</br>
+        ＊８じまでに、学校にはいることができます。おくれたらはいれません。</br>
+        ＊自転車やオートバイは、学校の入り口のとなりにとめてください。中に入れてはいけません。</br>
+        ＊学校の中で、次のことをしてはいけません。</br>
+        ・たばこをすうこと</br>
+        ・みずであそぶこと</br>
+        <hr>
+        このお知らせから、学校についてわかることは何ですか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "午後９時に学校に入ってもいいです。",
+        "入り口にオートバイをとめてはいけません。",
+        "サッカーをあそんでもいいです。",
+        "たばこを吸ってもいいです。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["サッカーをあそんでもいいです。"],
+      score: 7.25,
+    },
+    {
+      question: `
+        48-50</br>
+        しずかさん、お元気ですか。おひさしぶりです。この前の運動会で会ってからぜんぜん会っていませんね。</br>
+
+        来週の金曜日5月１０日、わたしの誕生日なんです。パーティーは５月１４にします。みんなに会いたいので、
+        誕生パーティーをひらくことにしました。パーティーは私の家にやります。来る人は、なおみさんやひろみさんなど、
+        しずかさんが知っている人たちです。</br>
+        場所は地図を入れておいたので、来てください。パーティーは皆でゲームをあそんだり、ごはんを食べたり、うたをうたったりします。
+        わたしはおどりが苦手なので、あまりしたくにですが、なおみさんはおどりが上手だと聞いて、おどってくれるらあしいですよ。</br>
+        つごうがわるいばあいは、前の日までにわたしにお電話をお願いします。それでは、ぜったいにたのしいのでぜひ来てください。待っています。</br>
+        </br>
+        ゆりこ
+        <hr>
+        パーティーはだれの誕生日をいわうのですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["しずかさん", "ゆりこさん", "なおみさん", "ひろみさん" ],
+      type: 'MCQs',
+      correctAnswers: ["ゆりこさん"],
+      score: 7.25,
+    },
+    {
+      question: `
+        48-50</br>
+        しずかさん、お元気ですか。おひさしぶりです。この前の運動会で会ってからぜんぜん会っていませんね。</br>
+
+        来週の金曜日5月１０日、わたしの誕生日なんです。パーティーは５月１４にします。みんなに会いたいので、
+        誕生パーティーをひらくことにしました。パーティーは私の家にやります。来る人は、なおみさんやひろみさんなど、
+        しずかさんが知っている人たちです。</br>
+        場所は地図を入れておいたので、来てください。パーティーは皆でゲームをあそんだり、ごはんを食べたり、うたをうたったりします。
+        わたしはおどりが苦手なので、あまりしたくにですが、なおみさんはおどりが上手だと聞いて、おどってくれるらあしいですよ。</br>
+        つごうがわるいばあいは、前の日までにわたしにお電話をお願いします。それでは、ぜったいにたのしいのでぜひ来てください。待っています。</br>
+        </br>
+        ゆりこ
+        <hr>
+        パーティーはだれの誕生日をいわうのですか。
+        `,
+      image: '',
+      audio: '',
+      choices: ["５月１０日", "５月１１日",  "５月１３日", "５月１４日" ],
+      type: 'MCQs',
+      correctAnswers: ["５月１４日"],
+      score: 7.25,
+    },
+    {
+      question: `
+        48-50</br>
+        しずかさん、お元気ですか。おひさしぶりです。この前の運動会で会ってからぜんぜん会っていませんね。</br>
+
+        来週の金曜日5月１０日、わたしの誕生日なんです。パーティーは５月１４にします。みんなに会いたいので、
+        誕生パーティーをひらくことにしました。パーティーは私の家にやります。来る人は、なおみさんやひろみさんなど、
+        しずかさんが知っている人たちです。</br>
+        場所は地図を入れておいたので、来てください。パーティーは皆でゲームをあそんだり、ごはんを食べたり、うたをうたったりします。
+        わたしはおどりが苦手なので、あまりしたくにですが、なおみさんはおどりが上手だと聞いて、おどってくれるらあしいですよ。</br>
+        つごうがわるいばあいは、前の日までにわたしにお電話をお願いします。それでは、ぜったいにたのしいのでぜひ来てください。待っています。</br>
+        </br>
+        ゆりこ
+        <hr>
+        場所がわからないときどうしますか。
+        `,
+      image: '',
+      audio: '',
+      choices: [
+        "なおみさんにききます。",
+        "地図をみます。",
+        "行きません。",
+        "友達に送ってもらいます。"
+      ],
+      type: 'MCQs',
+      correctAnswers: ["地図をみます。"],
+      score: 7.25,
     },
   ],
 }

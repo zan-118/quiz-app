@@ -1,0 +1,17 @@
+import Image1 from './1.png'
+import Image2 from './2.png'
+import Image3 from './3.png'
+import Image31 from './31.png'
+import Image32 from './32.png'
+import Image33 from './33.png'
+import Image34 from './34.png'
+import Image35 from './35.png'
+import Image47 from './47.png'
+import Image48 from './48.png'
+import Image49 from './49.png'
+import Image51 from './51.png'
+import Image52 from './52.png'
+import Image53 from './53.png'
+import Image54 from './54.png'
+
+export {Image1, Image2, Image3, Image31, Image32, Image33, Image34, Image35, Image47, Image48, Image49, Image51, Image52, Image53 ,Image54};
