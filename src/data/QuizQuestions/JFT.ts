@@ -5,8 +5,8 @@
 
 import { Topic } from '.'
 import { Image1, Image2, Image3, Image31, Image32, Image34, Image35,  } from '../../assets/images/Simulation JFT-1'
-
-import {Audio31, Audio32, Audio33, Audio34, Audio35, Audio36, Audio37, Audio38, Audio39, Audio40} from '../../assets/audio/Simulation JFT-1'
+import {Audio31,  Audio33, Audio34, Audio35, Audio36, Audio37, Audio38, Audio39, Audio40} from '../../assets/audio/Simulation JFT-1'
+import  Audio32  from '../../assets/audio/Simulation JFT-1/32.mp3'
 export const JFT: Topic = {
   topic: 'JFT',
   level: 'Beginner',

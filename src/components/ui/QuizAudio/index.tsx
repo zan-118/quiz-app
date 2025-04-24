@@ -1,42 +1,56 @@
-import { FC, useRef } from 'react'
+import { FC, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 interface QuizAudioProps {
   audio: string
 }
 
-const AudioStyle = styled.audio`
-  border-radius: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  box-shadow: 6px 6px 2px ${({ theme }) => theme.colors.themeColor};
+const HiddenAudio = styled.audio`
+  display: none;
+`
+
+const PlayButton = styled.button`
+  padding: 10px 16px;
+  background-color: ${({ theme }) => theme.colors.themeColor};
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
 `
 
 const QuizAudio: FC<QuizAudioProps> = ({ audio }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const [hasPlayed, setHasPlayed] = useState(false)
 
   const handlePlay = () => {
-    if (audioRef.current) {
+    if (audioRef.current && !hasPlayed) {
       audioRef.current.play()
+      setHasPlayed(true)
     }
   }
 
   return (
     <div>
-      <AudioStyle
+      <HiddenAudio
         ref={audioRef}
-        controls
         onEnded={() => {
           if (audioRef.current) {
             audioRef.current.pause()
-            audioRef.current.currentTime = 0 // Reset ke awal
+            audioRef.current.currentTime = 0
           }
         }}
       >
         <source src={audio} type="audio/mpeg" />
         Your browser does not support the audio element.
-      </AudioStyle>
-      <button onClick={handlePlay}>Play Audio</button>
+      </HiddenAudio>
+      <PlayButton onClick={handlePlay} disabled={hasPlayed}>
+        {hasPlayed ? 'Audio Selesai' : 'Putar Audio'}
+      </PlayButton>
     </div>
   )
 }
